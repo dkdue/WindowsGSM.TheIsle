@@ -10,4 +10,4 @@ WindowsGSM >= 1.21.0
   3. Click [RELOAD PLUGINS] button or restart WindowsGSM
 
 # License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the <a href="https://github.com/dkdue/WindowsGSM.TheIsle/blob/main/LICENSE">LICENSE.md</a>file for details
