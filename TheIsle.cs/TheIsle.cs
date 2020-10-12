@@ -163,7 +163,7 @@ namespace WindowsGSM.Plugins
             {
                 using (WebClient webClient = new WebClient())
                 {
-                    await webClient.DownloadFileTaskAsync($"", filePath);
+                    await webClient.DownloadFileTaskAsync($"https://raw.githubusercontent.com/dkdue/WindowsGSM-Configs/main/TheIsle/Game.ini", filePath);
                 }
             }
             catch (Exception e)
