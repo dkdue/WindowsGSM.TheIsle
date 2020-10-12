@@ -8,3 +8,6 @@ WindowsGSM >= 1.21.0
   1. Download the latest release
   2. Move TheIsle.cs folder to plugins folder
   3. Click [RELOAD PLUGINS] button or restart WindowsGSM
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details
