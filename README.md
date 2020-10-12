@@ -5,6 +5,6 @@ WindowsGSM plugin that provides TheIsle Dedicated server support!
 WindowsGSM >= 1.21.0
 
 # Installation
-Download the latest release
-Move TheIsle.cs folder to plugins folder
-Click [RELOAD PLUGINS] button or restart WindowsGSM
+  1. Download the latest release
+  2. Move TheIsle.cs folder to plugins folder
+  3. Click [RELOAD PLUGINS] button or restart WindowsGSM
