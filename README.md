@@ -1,5 +1,5 @@
 # WindowsGSM.TheIsle
-WindowsGSM plugin that provides TheIsle Evrima Dedicated server support!
+🧩WindowsGSM plugin that provides TheIsle Evrima Dedicated server support!
 
 # The Game
 https://store.steampowered.com/app/376210/The_Isle/
