@@ -1,5 +1,5 @@
 # WindowsGSM.TheIsle
-🧩WindowsGSM plugin that provides Valheim Dedicated server support!
+🧩WindowsGSM plugin that provides TheIsle Evrima Dedicated server support!
 
 # The Game
 https://store.steampowered.com/app/892970/Valheim/
