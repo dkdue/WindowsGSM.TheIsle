@@ -147,8 +147,24 @@ namespace WindowsGSM.Plugins
         }
 
 
-        // - Stop server function
-        public async Task Stop(Process p) => await Task.Run(() => { p.Kill(); });
+		// - Stop server function
+        public async Task Stop(Process p)
+        {
+            await Task.Run(() =>
+            {
+                if (p.StartInfo.CreateNoWindow)
+                {
+                    Functions.ServerConsole.SetMainWindow(p.MainWindowHandle);
+                    Functions.ServerConsole.SendWaitToMainWindow("^c");
+					
+                }
+                else
+                {
+                    Functions.ServerConsole.SetMainWindow(p.MainWindowHandle);
+                    Functions.ServerConsole.SendWaitToMainWindow("^c");
+                }
+            });
+        }
 
         // Get ini files
         public static async Task<bool> DownloadGameServerConfig(string fileSource, string filePath)
