@@ -1,4 +1,4 @@
-# WindowsGSM.Valheim
+# WindowsGSM.TheIsle (Evrima)
 🧩WindowsGSM plugin that provides TheIsle Evrima Dedicated server support!
 
 # The Game
