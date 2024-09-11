@@ -44,7 +44,7 @@ namespace WindowsGSM.Plugins
         // - Game server default values
         public string Port = "7777"; // Default port
         public string QueryPort = "27020"; // Default query port
-        public string Defaultmap = "Isla_Spiro"; // Default map name
+        public string Defaultmap = "Gateway"; // Default map name
         public string Maxplayers = "75"; // Default maxplayers
         public string Additional = ""; // Additional server start parameter
 
@@ -73,7 +73,7 @@ namespace WindowsGSM.Plugins
         {
             // Check for files in Win64
             string win64 = Path.Combine(ServerPath.GetServersServerFiles(_serverData.ServerID, @"TheIsle\Binaries\Win64\"));
-            string[] neededFiles = { "steamclient64.dll", "tier0_s64.dll", "vstdlib_s64.dll" };
+            string[] neededFiles = { "tbb.dll", "tbb12.dll", "tbbmalloc.dll" };  // these are the new dll files in the folder
 
             foreach (string file in neededFiles)
             {
@@ -86,10 +86,10 @@ namespace WindowsGSM.Plugins
             string shipExePath = Functions.ServerPath.GetServersServerFiles(_serverData.ServerID, StartPath);
 
             // Prepare start parameter
-            //string param = string.IsNullOrWhiteSpace(_serverData.ServerMap) ? string.Empty : $"{_serverData.ServerMap}?listen";
-            string param = string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $" MultiHome={_serverData.ServerIP}";
+            // string param = string.IsNullOrWhiteSpace(_serverData.ServerMap) ? string.Empty : $"{_serverData.ServerMap}?listen";
+            // string param = string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $" MultiHome={_serverData.ServerIP}"; // depreciated
             param += string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $"?Port={_serverData.ServerPort}";
-			param += string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $"?QueryPort={_serverData.ServerQueryPort}";
+	    // param += string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $"?QueryPort={_serverData.ServerQueryPort}"; // depreciated
             param += $"?{_serverData.ServerParam}? -nosteamclient -game -server -log";
 
             // Prepare Process
